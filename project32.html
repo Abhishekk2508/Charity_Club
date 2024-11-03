@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html  lang="en"  dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="325p.css">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<style type="text/css">
+
+.button {
+  background-color: deeppink; /* PINK */
+  border-radius: 40px;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+  text-decoration-style: solid;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 650px;
+  margin-top: 205px;
+  cursor: pointer;
+}
+			.column {
+				float: left;
+				width: 27%;
+			height: 300px;
+			}
+			p {
+				font-size:20px;
+				font-weight:bold;
+				text-color:white;
+			}
+			
+			.navbar {
+  overflow:none;
+  background-color: #1ccfd1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.mySlides {display:none;}
+.navbar  {
+  float: left;
+  display: block;
+  color: #eeeeee;
+  text-align: left;
+  padding: 1px 2px;
+  text-decoration: none;
+  font-size: 5px;
+}
+
+.navbar :hover {
+  color: #1c87c9;
+}
+
+.container {
+  padding: 18px;
+  margin-top: 35px;
+  height: 2000px;
+}
+}
+
+$color1: #292e3e;
+$color2: #57C09F;
+
+.slider {
+  width: auto;
+  margin: 30px 50px 50px;
+
+  .slick-slide {
+    background: $color1;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: $color1;
+  }
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-slide:nth-child(odd) {
+    background: $color2;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: courier new;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ff5959;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.right-lnk {
+   float: right;
+}
+
+</style>
+
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+  <nav class="navbar">
+<label class="logo"><img src="aa.png" style="width:95px; margin:3px; margin-top:1px; border-radius:5px;">
+</label>
+
+
+<ul>
+<li><a href="#" class="">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="form.html">sign up</a></li>
+<li><a href="lgn.html">login</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul
+</nav>
+</nav>
+<body bgcolor="#e84bee" >
+
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+  <a href="#">Blog <i class="fa fa-book"></i></a>
+  <a href="#">Contact <i class="fa fa-envelope"></i></a>
+  <a href="#">About <i class="fa fa-user"></i></a>
+  <div class="right-lnk">
+  <a href="#">Login / Signup</i></a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+
+</div>
+
+<h1 style="color:red; text-align:center; margin-top:10px;">
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px height:800px; width:80%; padding:50px; margin:100px; font-family:algebrian; <b>">
+  <img class="mySlides" src="projectimg.jpeg" style="width:100%">
+  <img class="mySlides" src="aa.png" style="width:100%">
+  <img class="mySlides" src="1.jpeg" style="width:100%">
+  <img class="mySlides" src="23.jpeg" style="width:100%">
+</div>
+
+<script> 
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div>
+<marquee style="color="> Alone we can do so little;</br> Together we can do so much. </marquee> <h1>
+
+
+<p></p>
+
+<button class="button"  style="width:150px; cursor:pointer;"><a href="donate.html" style="text-decoration:none;">Donate Now</a></button>
+
+
+<h1 style="text-align:center; color:white;"> How do we work</h1></hr>
+<div class="ss" style="display:flex;">
+<div>
+<img src="24.jpg"  style="width:400px; height:330px;">
+<p>Schedule time for donation </p>
+</div>
+<div>
+<img src="schedule.png" style="width:400px; height:330px">
+<p>Donation pickup</p>
+</div>
+<div>
+<img src="23.jpg" style="width:400px;  height:330px;">
+<p>Donate your items</p>
+</div>
+</div>
+</br></br></br>
+		<!--HTML footer tag starts here-->
+		<footer >
+			<div class="column" style="background-color:black; height:250px; width:35%;">
+
+
+
+				<ul style="list-style-type:disc" >
+					<li style="color:white; margin-left:5px;"><a href="#">  Home</a></li>
+					<li style="color:white; margin:5px;"><a href="about.html">About</a></li>
+					<li style="color:white; margin:5px;"><a href="form.html">Sign up</a></li>
+					<li style="color:white; margin:5px;"><a href="lgn.html">Login</a></li>
+					<li style="color:white; margin-left:18px;">Contact: 7480860225, 7310106061 </a></li>
+</br>
+				</ul>
+			</div>
+
+			<div class="column" style="background-color:black; height:250px; width:30%;">
+
+				<ul>
+				<div>contact us<h1>
+	            	<li style="color:white;"><a href="https://www.facebook.com ">Facebook</a></li>
+					<li style="color:white;"><a href="https://www.facebook.com">Twitter</a></li></br>
+					<li style="color:white;"><a href="https://www.instagram.com">Instagram</a></li>
+					<li style="color:white;"><a href="feedback.html">Feedback</a></li>
+			
+
+				</ul>
+				</br>
+			</div>
+
+			<div class="column" style="background-color:black; height:250px; width:35%;">
+
+				<ul>
+					<li style="color:white;"><a href="https://www.copyright.gov.in">Copyright@2022</a></li></br>
+					<li style="color:white;"><a href="https://charityclub@gmail.com">Charityclub@gmail.com</a></li></br>
+					<li  style="color:white;"><a href="#">privacy policy</a></li>
+
+				</ul>
+			</div>
+		<div class="footer" style="text-align:center;">
+           @Copyright <a href="https://charityclub@gmail.com"> charityclub </a> 2022- All Right Reserved.
+</div>
+
+</body>
+</html>

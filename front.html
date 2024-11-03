@@ -1,0 +1,193 @@
+
+signup
+
+
+.aa{
+	background-color:black;
+	 width:350px;
+	 height:380px;
+	 margin-top:50px;
+	padding:20px;
+	color:white;
+	 margin-left:36%;
+	 border-radius:10px;
+	 }
+.aa input[type="text"]{
+width:160px;
+height:20px;
+   border-radius:6px;
+padding:5px;
+	border:0px;
+	margin-left:22px;
+	 }
+   .aa input[type="submit"]{
+width:100px;
+height:30px;
+   border-radius:6px;
+   background-color:red;
+   border:10px;
+   margin-left:100px;
+   font-weight:bold;
+   cursor:pointer;
+
+   }
+   .aa input[type="submit"]:hover{
+	   background-color:#2c3e50;
+   }
+   .aa input[type="email"]{
+width:160px;
+height:20px;
+   border-radius:6px;
+padding:5px;
+	border:0px;
+	margin-left:40px;
+	 }
+	 .aa input[type="number"]{
+width:160px;
+height:20px;
+   border-radius:6px;
+padding:5px;
+	border:0px;
+	margin-left:15px;
+	 }
+	 select{
+width:160px;
+height:20px;
+   border-radius:6px;
+padding:3px;
+	border:0px;
+	margin-left:35px;
+	 }
+   
+   </style>   
+</head>
+<body>
+<nav style="margin-top:0px;">
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo"><span style="color:white; font-family:Cursive; ">ChARiTY</span><span style="color:red; font-family:Cursive; padding: 1.5px;" >cLuB</span>
+</label>
+<ul>
+<li><a href="project325.php">HOME</a></li>
+<li><a href="aboutf.php">ABOUT</a></li>
+<li><a href="form.php">SIGN UP</a></li>
+<li><a href="lgn.php">LOGIN</a></li>
+<li><a href="donate1.php">DONATE</a></li>
+</ul>
+</nav>
+</br></br></br></br></br></br>
+<form action="second.php" method="post" class="aa">
+	<div style="background-color:#2c3e50; width: 350px; height:30px; border-radius:8px; margin-left:-20px;">
+    <h2 style="text-align:center;">SIGN UP </h2></br></br>
+</div>
+</br>
+	Username 
+	<input type= "text" name="t1" placeholder="enter user name" required />
+	<br/><br/>
+	E-mail  
+	<input type= "email" name="t2" placeholder="enter email"required />
+	<br/><br/>
+	Password 
+	<input type= "text" name="t3" placeholder="enter user password" required />
+	<br/><br/>
+	Gender 
+	<select >
+		<option  name="t4" value="Male" required />Male</option>
+	<option name="t4" value="Female" required />Female</option>
+	<option name="t4" value="Female" required />Other</option>
+	</select>
+	<br/><br/>
+	Mobile No 
+	<input type="number" name="t5" placeholder="enter mobile no" required /></br>
+	<br/><br/>
+	<input type="submit" value="Register"></br></br></br>
+	<h3>Already have account? <a href="lgn.php" style="">LOGIN</a></h3></br>
+</form>
+</br></br></br>
+
+
+
+
+
+login 
+
+
+
+
+.aa{
+	background-color:black;	
+	 width:300px;
+	 height:300px;
+	 margin-top:100px;
+	padding:20px;
+	color:white;
+	 margin-left:36%;
+	 border-radius:10px;
+	 }
+.aa input[type="email"]{
+   width:160px;
+   height:20px;
+   border-radius:6px;
+   padding:5px;
+   margin-left:50px;
+	border:0px;
+	 }
+.aa input[type="password"]{
+  width:160px;
+  height:20px;
+  border-radius:6px; 
+  padding:5px;
+  margin-left:50px;
+  border:0px;
+  }
+   .aa input[type="submit"]{
+   width:100px;
+   height:20px;
+   border-radius:6px;
+   background-color:red;
+   margin-left:75px;
+   border:0px;
+   font-weight:bold;
+   cursor:pointer;
+  }
+  .aa input[type="submit"]:hover{
+	  background-color:#2c3e50;
+  }
+	 </style>
+	 </head>
+<body>
+<nav style="margin:0px;">
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo"><span style="color:white; font-family:Cursive; ">ChARiTY</span><span style="color:red; font-family:Cursive; padding: 1.5px;" >cLuB</span>
+</label>
+<ul>
+<li><a href="project325.php">HOME</a></li>
+<li><a href="aboutf.php">ABOUT</a></li>
+<li><a href="form.php">SIGN UP</a></li>
+<li><a href="lgn.php">LOGIN</a></li>
+<li><a href="donate1.php">DONATE</a></li>
+</ul>
+</nav>
+</br></br></br></br>
+	 <div class= "">
+	 <form  action="session5.php" class="aa" method="post">
+	 <div style="background-color:#2c3e50; width: 300px; height:30px;  border-radius:8px; margin-left:-20px;">
+    <h2 style="text-align:center;">LOGIN </h2></br></br>
+</div>
+</br>
+	 
+	 <input type= "email" placeholder="enter user name" name="t2" required></br></br>
+	 <input type="password" placeholder= "enter your password" name="t3" required></br></br>
+	 <input type="submit" value= "login" name="t6"></br> </br>
+	 <a href="forgot1.php" ><h3 style="text-align:left; color:blue;">Forgot Password ?</h3></a></br>
+	 <h3>Don't have account? <a href="form.php">SIGN UP</a></h3>
+	 
+	 
+	 </form>
+	 </div>
+</br></br></br>

@@ -1,0 +1,17 @@
+<div class="banner_main">
+			<div class="container">
+				<div class="ram">
+					<div class="row">
+					    <div class="col-sm-12">
+						    <h1 class="taital">Best Pet Shop</h1>
+						    <p class="consectetur_text">Even when you are forced by time, they will definitely be with you</p>
+						    <div class="banner_bt">
+								<a href="donate1.php">
+						    	<button class="read_bt">Read More</button>
+								</a>
+						    </div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+		</div>

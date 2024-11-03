@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="325p.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <style type= "text/css">
+body{
+	 background-image: url(23.jpg);
+	 background-repeat:no-repeat;
+	background-size:cover;
+	
+	 }
+	 .aa{
+	background-color:gray;	
+	 width:400px;
+	 height:250px;
+	 margin-top:230px;
+	padding:20px;
+	color:white;
+	 margin-left:450px;
+	 border-radius:10px;
+	 }
+.aa input[type="text"]{
+width:160px;
+height:20px;
+   border-radius:6px;
+padding:5px;
+	border:0px;
+	 }
+   .aa input[type="submit"]{
+width:100px;
+height:20px;
+   border-radius:6px;
+   background-color:blue;
+   border:0px;
+   font-weight:bold;
+   cursor:pointer;
+   }
+   </style>
+</head>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo"><img src="aa.png"/ style="width:95px; margin:3px; margin-top:1px; border-radius:5px;">  
+</label>
+<ul>
+<li><a href="#" >Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="form.html">sinup</a></li>
+<li><a href="lgn.html">login</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</nav>
+<body>
+<div class="aa">
+<form action="second.php" method="post">
+	Username:-
+	<input type= "text" placeholder="enter user name" name="t1"/>
+	<br/><br/>
+	E-mail:- 
+	<input type= "text" placeholder="enter your email" name="t2"/>
+	<br/><br/>
+	Password:-
+	<input type= "text" placeholder="enter your password" name="t3"/>
+	<br/><br/>
+	Gender:-
+	Male<input type= "radio" name="t4" value="Male"/>
+	Female<input type= "radio" name="t4" value="Female"/>
+	<br/><br/>
+	Mobile No:-
+	<input type="text"  placeholder="enter mobile no"name="t5"/>
+	<br/><br/>
+	<input type="submit" value="SIGN IN">
+</form>
+</div>
+</body>
+</html>
